@@ -17,7 +17,7 @@ control.addEventListener('click',
 
     for (let i = 0; i < mails.length; i++) {
       const element = mails[i];
-      if (inserisciMail.toLowerCase() == element.toLowerCase()) {
+      if (inserisciMail.value.toLowerCase() == element.toLowerCase()) {
           find = true;
       } 
   } 
@@ -25,8 +25,10 @@ control.addEventListener('click',
     console.log(find);
     if (find) {
         console.log('sei nella lista');
+        document.getElementById('presenza').innerHTML = 'Sei nella lista';
     } else {
-        console.log('non sei nella lista')
+        console.log('non sei nella lista');
+        document.getElementById('presenza').innerHTML = 'Non sei nella lista';
     }
 
     mail = '';
