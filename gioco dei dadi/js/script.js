@@ -18,6 +18,8 @@ if (generatorUser > generatorPc) {
 } else if (generatorUser == generatorPc) {
     console.log('Draw');
     document.getElementById('winner').innerHTML = 'Draw';
+} 
+
 
 document.getElementById('gamer').innerHTML = `Numero Utente= ${generatorUser}<br>
 Numero Pc= ${generatorPc}`
